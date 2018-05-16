@@ -4,7 +4,7 @@ var path = require('path');
 
 /* Load React App */
 router.get('/', function (req, res, next) {
-  res.sendFile(path.join(__dirname + '/../client/build/index.html'));
+  res.sendFile(path.join(__dirname + '/../client/src/public/index.html'));
 });
 
 module.exports = router;
