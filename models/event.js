@@ -31,4 +31,4 @@ EventSchema.path('date').required(true, 'Date cannot be blank!');
 EventSchema.path('email').validate(isValidEmail, 'Email address is invalid!')
 EventSchema.path('date').validate(isDateInPast, 'Date is invalid!')
 
-module.exports = mongoose.model('EventModel', EventSchema);
+module.exports = mongoose.model('events', EventSchema);
