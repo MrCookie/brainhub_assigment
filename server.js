@@ -16,7 +16,7 @@ db.on('error', console.error.bind(console, 'connection error!'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'client/src/public')));
+app.use(express.static(path.join(__dirname, 'client/public')));
 
 app.use('/', require('./routes/index'));
 
