@@ -14,6 +14,7 @@ const INPUT_COMPONENTS = {
 }
 
 class InputContainer extends Component {
+    
     static propTypes = {
         type: PropTypes.string.isRequired
     };
